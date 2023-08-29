@@ -1,13 +1,16 @@
 // Import React 
 import React from "react";
+// Import profile image to use in About page
+import Profile from "../../assets/img/profile/profile.jpg";
+// Import "about" css Styles
+import "./about.css";
 // Import react-bootstrap components to use in About page
 import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-// Import "about" css Styles
-import "./about.css";
+
 
 // Helper function to render a button with an external link
 const ExternalLinkButton = ({ href, text, variant }) => {
@@ -28,7 +31,7 @@ const About = () => {
                         {/* Profile Picture */}
                         <Col xs={12} md={6}>
                             <Row className="justify-content-center mb-2 mr-2 ">
-                                <Image className="profile justify-content-end" alt="profile" src={require("../../assets/img/profile/profile.jpg")} thumbnail fluid />
+                                <Image className="profile justify-content-end" alt="profile" src={Profile} thumbnail fluid />
                             </Row>
                         </Col>
                         {/* Right column with details for about me */}
@@ -36,9 +39,11 @@ const About = () => {
                             <Row className=" align-items-start p-2 my-details rounded align-text-left">
                                 {/* Description */}
                                 Hi there! I am <strong>&nbsp;Joshua Hebert</strong>
-                                <br />A passionate programmer and a learner, born and brought up in the United States. I am a Full Stack Web Developer with React.js, Express.js, Node.js, and MongoDB as my tech stack.
+                                <br />A passionate programmer and a learner, born and brought up on the east coast the United States. 
+                                I am a Full Stack Web Developer with React.js, Express.js, Node.js, and MongoDB as my tech stack.
                                 <br />
-                                I love sports and gaming. In my free time, I play video games, watch sports, and travel. I also love to take photos of the places I visit.
+                                I love sports and gaming. In my free time, I play video games, watch sports, and travel. 
+                                I also love to eat at new restaurants and take photos of the places I visit.
                                 <br />
                                 I am currently enrolled in the UNCC Coding Bootcamp and am looking for a full-time position as a Web Developer.
                                 <br />
