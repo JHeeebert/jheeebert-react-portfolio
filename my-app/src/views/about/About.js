@@ -28,7 +28,7 @@ const About = () => {
                         {/* Profile Picture */}
                         <Col xs={12} md={6}>
                             <Row className="justify-content-center mb-2 mr-2 ">
-                                <Image className="profile justify-content-end" alt="profile" src={require("../../assets/images/profile.jpg")} thumbnail fluid />
+                                <Image className="profile justify-content-end" alt="profile" src={require("../../assets/img/profile/profile.jpg")} thumbnail fluid />
                             </Row>
                         </Col>
                         {/* Right column with details for about me */}
@@ -41,7 +41,7 @@ const About = () => {
                                 I love sports and gaming. In my free time, I play video games, watch sports, and travel. I also love to take photos of the places I visit.
                                 <br />
                                 I am currently enrolled in the UNCC Coding Bootcamp and am looking for a full-time position as a Web Developer.
-                                <br /> 
+                                <br />
                                 <br />
                                 {/* Buttons to download resume and view links to my other work */}
                                 <Col className="d-flex justify-content-center flex-wrap">
