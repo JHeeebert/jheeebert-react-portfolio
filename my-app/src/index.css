@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,6 +9,22 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "Karla", sans-serif;
+  /* Used coolors to create gradietn color scheme https://coolors.co/89b6a5-4c3b4d-c9eddc-82968c-6a706e */
+  /* background-image: linear-gradient(  <color name="Cambridge blue" hex="89b6a5" r="137" g="182" b="165" />
+  <color name="English Violet" hex="4c3b4d" r="76" g="59" b="77" />
+  <color name="Mint green" hex="c9eddc" r="201" g="237" b="220" />
+  <color name="Cambridge blue" hex="82968c" r="130" g="150" b="140" />
+  <color name="Dim gray" hex="6a706e" r="106" g="112" b="110" />
+   */
+  background-image: linear-gradient(0deg, #89b6a5ff, #4c3b4dff, #c9eddcff, #82968cff, #6a706eff);
+  /* Full Height */
+  height: 100%;
+
+  /* Center and scale the images */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 code {
