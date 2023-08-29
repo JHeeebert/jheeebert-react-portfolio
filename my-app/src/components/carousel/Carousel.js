@@ -14,16 +14,18 @@ import slide4 from "../../assets/images/carousel/slide4.jpg"
 const CustomCarousel = () => {
     return (
         <div className='home'>
-            <Carousel controls ={false}>
+            <Carousel controls={false}>
                 {/* Map over an array of images in slide show */}
                 {[slide1, slide5, slide3, slide4].map((slide, index) => {
-                    <Carousel.Item key={index}>
-                        <img className="d-block w-100 custome-img" src={slide} alt={`Slide $ {index + 1}`}/>
+                    return (
+                        <Carousel.Item key={index}>
+                            <img className="d-block w-100 custome-img" src={slide} alt={`Slide $ {index + 1}`} />
                         </Carousel.Item>
+                    );
                 })}
-                </Carousel>
-                <ScrollDown/>
-                </div>
+            </Carousel>
+            <ScrollDown />
+        </div>
     );
 };
 // Export CustomCarousel component
