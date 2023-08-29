@@ -1,0 +1,38 @@
+/* Apply styles to the "About Me" Section */
+.about {
+    background-color: transparent !important;
+    font-size: 1.1rem;
+}
+
+/* Style for the profile image */
+.profile {
+    max-width: 25em;
+}
+
+/* Style for the "Details Section" */
+.my-details {
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-right: -100px;
+}
+
+/* Media Query for screen size less than 768px */
+@media screen and (max-width: 768px) {
+
+    /* Adjust font size for smaller screens */
+    .font-details {
+        font-size: 2rem !important;
+    }
+
+    /* React margin for details section on smaller screens */
+    .my-details {
+        margin-top: 1rem;
+        margin-right: 0px;
+    }
+
+    /* Adjust max width of the profile image on smaller screens  */
+    .profile {
+        max-width: 15em;
+    }
+}
