@@ -38,7 +38,7 @@ const sections = [
         component: (
           <Parallax
             blur={{ min: -30, max: 30 }}
-            bgImage={require("./assets/images/home-bg.jpg")}
+            bgImage={require("./assets/img/parallax/background.webp")}
             bgImageAlt="home-bg"
             strength={-200}
           >
