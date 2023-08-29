@@ -16,6 +16,7 @@
     "typewriter-effect": "^2.13.1"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@merc/react-timeline": "^0.1.42",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^11.1.0",
