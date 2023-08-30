@@ -4,7 +4,7 @@ import "./App.css";
 // Import Components to use in App
 import NavBar from "./components/navBar/NavBar";
 import CustomCarousel from "./components/carousel/Carousel";
-import HomeMessage from "./components/home-message/HomeMessage";
+import HomeMessage from "./components/home-message/HomeMessage.Js"  
 // Import built in React components to use in App
 import Fade from "react-reveal/Fade";
 import { Parallax } from "react-parallax";
@@ -38,8 +38,8 @@ const sections = [
         component: (
           <Parallax
             blur={{ min: -30, max: 30 }}
-            bgImage={require("./assets/img/parallax/background.webp")}
-            bgImageAlt="home-bg"
+            bgImage={require("./assets/img/parallax/background.jpg")}
+            bgImageAlt=""
             strength={-200}
           >
             <div>
@@ -73,4 +73,4 @@ return (
     </div>
   );
 }
-export default App;
+export default App; 
