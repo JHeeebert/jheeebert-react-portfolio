@@ -7,7 +7,6 @@ import "./about.css";
 // Import react-bootstrap components to use in About page
 import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
-import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
@@ -26,7 +25,7 @@ const About = () => {
         <div id="about">
             <div className="about">
                 <h1 className="pt-3 text-center font-details pb-3">ABOUT ME</h1>
-                <Container>
+                <main className="d-flex justify-content-center flex-wrap">
                     <Row className="pt-3 pb-5 align-items-center">
                         {/* Profile Picture */}
                         <Col xs={12} md={6}>
@@ -70,7 +69,7 @@ const About = () => {
                             </Row>
                         </Col>
                     </Row>
-                </Container>
+</main>
             </div>
         </div>
     );

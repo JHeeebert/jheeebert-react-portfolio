@@ -9,7 +9,6 @@ import HomeMessage from "./components/home-message/HomeMessage.Js"
 import Fade from "react-reveal/Fade";
 import { Parallax } from "react-parallax";
 import Slide from "react-reveal/Slide";
-import Container from "react-bootstrap/Container";
 // Import View folders to use in App
 import About from "./views/about/About";
 import Skills from "./views/skills/Skills";
@@ -23,10 +22,10 @@ import Footer from "./components/footer/Footer";
 function SectionAnimation({ animationType, content }) {
   return (
     <div>
-      <container className="section-container rounded">
+      <div className="section-container rounded">
         {/* Render the animation with content */}
         {animationType && React.createElement(animationType, { duration: 1000, distance: "20px" }, content)}
-      </container>
+      </div>
     </div>
   );
 }
@@ -45,11 +44,11 @@ const sections = [
             strength={-200}
           >
             <div>
-              <Container className="section-container rounded">
+              <div className="section-container rounded">
                 <Fade left duration={1000} distance="20px">
                   <About />
                 </Fade>
-              </Container>
+              </div>
               </div>
           </Parallax>
         ),

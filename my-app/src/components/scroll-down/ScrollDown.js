@@ -21,7 +21,7 @@ const MyScroll = styled.div`
     justify-content: center;
     background-color: transparent;
     font-weight: bold;
-    // text-shadow: 1px 1px 1px #45a29e; 
+    text-shadow: 1px 1px 1px #45a29e; 
     color: #fff;
     animation: 3s linear 0s infinite normal none running ${bounceAnimation};
     .turn {
