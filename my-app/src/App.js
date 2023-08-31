@@ -15,8 +15,10 @@ import About from "./views/about/About";
 import Skills from "./views/skills/Skills";
 import Portfolio from "./views/portfolio/Portfolio";
 import Contact from "./views/contact/Contact";
+import ContactForm from "./views/contact-form/ContactForm";
 import Resume from "./views/resume/Resume";
 import Footer from "./components/footer/Footer";
+
 // Helper function to render section animations
 function SectionAnimation({ animationType, content }) {
   return (
@@ -52,11 +54,12 @@ const sections = [
           </Parallax>
         ),
       },
-      { component: Skills, animationType: Fade },
-      { component: Portfolio, animationType: Slide },
-      { component: Resume, animationType: Slide },
-      { component: Contact, animationType: Fade },
-      { component: Footer, },
+      { views: Skills, animationType: Fade },
+      { views: Portfolio, animationType: Slide },
+      { views: Resume, animationType: Slide },
+      { views: Contact, animationType: Fade },
+      { views: ContactForm, animationType: Fade },
+      { views: Footer, animationType: Fade },
     ];
 
 return (
