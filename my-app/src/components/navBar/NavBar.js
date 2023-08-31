@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import Logo from './assets/icons/logo.jpg';
+import Logo from '../../assets/icons/logo.jpg';
 import "./navBar.css";
 
 // Navbar Component is a wrapper for the Navbar Component 

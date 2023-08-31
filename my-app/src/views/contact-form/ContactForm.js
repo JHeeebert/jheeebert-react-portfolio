@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./contact-form.css";
+import "./contactForm.css";
 import Swal from "sweetalert2";
 // Create validation function for email address
 const validateEmail = (email) => {
