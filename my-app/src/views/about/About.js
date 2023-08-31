@@ -39,10 +39,10 @@ const About = () => {
                             <Row className=" align-items-start p-2 my-details rounded align-text-left">
                                 {/* Description */}
                                 Hi there! I am <strong>&nbsp;Joshua Hebert</strong>
-                                <br />A passionate programmer and a learner, born and brought up on the east coast the United States. 
+                                <br />A passionate programmer and a learner, born and brought up on the east coast the United States.
                                 I am a Full Stack Web Developer with React.js, Express.js, Node.js, and MongoDB as my tech stack.
                                 <br />
-                                I love sports and gaming. In my free time, I play video games, watch sports, and travel. 
+                                I love sports and gaming. In my free time, I play video games, watch sports, and travel.
                                 I also love to eat at new restaurants and take photos of the places I visit.
                                 <br />
                                 I am currently enrolled in the UNCC Coding Bootcamp and am looking for a full-time position as a Web Developer.
