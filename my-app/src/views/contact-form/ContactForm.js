@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "./contact-form.css";
 import Swal from "sweetalert2";
-import { validateEmail } from "../../utils/helpers";
-
+// Create validation function for email address
+const validateEmail = (email) => {
+    /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email);
+};
 function ContactForm() {
     const initialState = {
         name: "",

@@ -1,6 +1,6 @@
 // Import React and the APP css file
 import React from "react";
-import "./App.css";
+import "./assets/css/App.css";
 // Import Components to use in App
 import NavBar from "./components/navBar/NavBar";
 import CustomCarousel from "./components/carousel/Carousel";
