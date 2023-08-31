@@ -4,7 +4,7 @@ import Carousel from 'react-bootstrap/Carousel';
 // Import components to use in carousel
 import ScrollDown from "../scroll-down/ScrollDown";
 // Import styles to use in carousel
-import "./carousal.css"
+import "./carousel.css"
 // Import images to use in carousel
 import slide1 from "../../assets/img/slides/slide1.jpg";
 import slide2 from "../../assets/img/slides/slide2.jpg";
