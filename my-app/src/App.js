@@ -7,15 +7,15 @@ import CustomCarousel from "./components/carousel/Carousel";
 import HomeMessage from "./components/home-message/HomeMessage.Js"
 // Import built in React components to use in App
 import Fade from "react-reveal/Fade";
-import { Parallax } from "react-parallax";
+import * as reactParallax from "react-parallax";
 import Slide from "react-reveal/Slide";
 // Import View folders to use in App
-import About from "./views/about/About";
-import Skills from "./views/skills/Skills";
-import Portfolio from "./views/portfolio/Portfolio";
-import Contact from "./views/contact/Contact";
-import ContactForm from "./views/contact-form/ContactForm";
-import Resume from "./views/resume/Resume";
+import About from "./components/about/About";
+import Skills from "./components/skills/Skills";
+import Portfolio from "./components/portfolio/Portfolio";
+import Contact from "./components/contact/Contact";
+import ContactForm from "./components/contact-form/ContactForm";
+import Resume from "./components/resume/Resume";
 import Footer from "./components/footer/Footer";
 // Helper function to render section animations
 function SectionAnimation({ animationType, content }) {
@@ -36,7 +36,7 @@ function App() {
     { component: HomeMessage },
     {
       component: (
-        <Parallax
+        <reactParallax.Parallax
           blur={{ min: -30, max: 30 }}
           bgImage={require("./assets/img/parallax/background.jpg")}
           bgImageAlt=""
@@ -49,7 +49,7 @@ function App() {
               </Fade>
             </div>
           </div>
-        </Parallax>
+        </reactParallax.Parallax>
       ),
     },
     { views: Skills, animationType: Fade },
