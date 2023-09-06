@@ -4,7 +4,7 @@ import "./App.css";
 // Import Components to use in App
 import NavBar from "./components/navBar/NavBar";
 import CustomCarousel from "./components/carousel/Carousel";
-import HomeMessage from "./components/home-message/HomeMessage.Js"  
+import HomeMessage from "./components/home-message/HomeMessage.Js"
 // Import built in React components to use in App
 import Fade from "react-reveal/Fade";
 import { Parallax } from "react-parallax";
@@ -17,7 +17,6 @@ import Contact from "./views/contact/Contact";
 import ContactForm from "./views/contact-form/ContactForm";
 import Resume from "./views/resume/Resume";
 import Footer from "./components/footer/Footer";
-
 // Helper function to render section animations
 function SectionAnimation({ animationType, content }) {
   return (
@@ -31,37 +30,37 @@ function SectionAnimation({ animationType, content }) {
 }
 // App function to render the App
 function App() {
-const sections = [
-      { component: NavBar },
-      { component: CustomCarousel },
-      { component: HomeMessage },
-      {
-        component: (
-          <Parallax
-            blur={{ min: -30, max: 30 }}
-            bgImage={require("./assets/img/parallax/background.jpg")}
-            bgImageAlt=""
-            strength={-200}
-          >
-            <div>
-              <div className="section-container rounded">
-                <Fade left duration={1000} distance="20px">
-                  <About />
-                </Fade>
-              </div>
-              </div>
-          </Parallax>
-        ),
-      },
-      { views: Skills, animationType: Fade },
-      { views: Portfolio, animationType: Slide },
-      { views: Resume, animationType: Slide },
-      { views: Contact, animationType: Fade },
-      { views: ContactForm, animationType: Fade },
-      { views: Footer, animationType: Fade },
-    ];
+  const sections = [
+    { component: NavBar },
+    { component: CustomCarousel },
+    { component: HomeMessage },
+    {
+      component: (
+        <Parallax
+          blur={{ min: -30, max: 30 }}
+          bgImage={require("./assets/img/parallax/background.jpg")}
+          bgImageAlt=""
+          strength={-200}
+        >
+          <div>
+            <div className="section-container rounded">
+              <Fade left duration={1000} distance="20px">
+                <About />
+              </Fade>
+            </div>
+          </div>
+        </Parallax>
+      ),
+    },
+    { views: Skills, animationType: Fade },
+    { views: Portfolio, animationType: Slide },
+    { views: Resume, animationType: Slide },
+    { views: Contact, animationType: Fade },
+    { views: ContactForm, animationType: Fade },
+    { views: Footer, animationType: Fade },
+  ];
 
-return (
+  return (
     <div className="App"
       style={{ position: "relative" }}>
       {sections.map((section, index) => (
