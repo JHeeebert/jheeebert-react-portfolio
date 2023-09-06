@@ -1,8 +1,10 @@
 import React from 'react';
+// Import react-bootstrap components to use in Contact page
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Button from 'react-bootstrap/Button';
-import Col from 'react-bootstrap/esm/Col';
-import Row from 'react-bootstrap/esm/Row';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+// Import CSS file for styling
 import "./contact.css";
 
 // Contact component to render the contact section
